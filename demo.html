@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Really Useful CSS</title>
+    <link rel="stylesheet" href="src/base.css">
+    <link rel="stylesheet" href="src/utility.css">
+</head>
+<body class="container--medium x-100 m--auto">
+    <div class="m--medium">
+        <header>
+            <h1>Really Useful CSS</h1>
+            <p>This tiny css library provides default styling and some small utilities. To see how it works view source in your browser</p>
+        </header>
+
+        <section class="my--large">
+            <h2>Text Elements</h2>
+            <hr>
+            <p>This is a standard paragraph of text. <strong>This text is bold.</strong> <em>This text is italicized.</em> Here is a <a href="#">hyperlink</a>.</p>
+            <blockquote>
+                This is a blockquote element used to indicate a quotation.
+            </blockquote>
+            <pre>This is some preformatted text</pre>
+            <p class="text--callout">This is a callout</p>
+        </section>
+
+        <section class="my--large">
+            <h2>Headings</h2>
+            <hr>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+        </section>
+
+        <section class="my--large">
+            <h2>Lists</h2>
+            <hr>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+
+        <section class="my--large">
+            <h2>Tables</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                    <tr>
+                        <td>Data 7</td>
+                        <td>Data 8</td>
+                        <td>Data 9</td>
+                    </tr>
+                    <tr>
+                        <td>Data 10</td>
+                        <td>Data 11</td>
+                        <td>Data 12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="my--large">
+            <h2>Forms</h2>
+            <hr>
+            <div class="card my--large p--medium">
+                <form action="#">
+                    <div class="flex-col">
+                        <div class="flex-col">
+                            <h3>Contact Information</h3>
+                            <label>Email:</label>
+                            <input type="text" placeholder="thomas@northwesternrailway.com">
+                        </div>
+                        <div class="flex-col my--medium">
+                            <h3>Shipping Information</h3>
+                            <div class="flex--auto">
+                                <div class="flex-col x-100">
+                                    <label>First Name:</label>
+                                    <input type="text" placeholder="Thomas">
+                                </div>
+                                <div class="flex-col x-100">
+                                    <label>Last Name:</label>
+                                    <input type="text" placeholder="The Tank">
+                                </div>
+                            </div>
+                            <div class="flex-col x-100">
+                                <label>Address:</label>
+                                <input type="text" placeholder="123 Main St, Sodor">
+                            </div>
+
+                            <label>Special Instructions:</label>
+                            <textarea rows="4" placeholder="Leave at sheds"></textarea>
+                        </div>
+
+                        <div class="flex-row--end">
+                            <input type="submit" value="Checkout">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="my--large">
+            <h2>Buttons</h2>
+            <hr>
+            <div class="flex--auto">
+                <button class="btn">Default Button</button>
+                <button class="btn--primary">Primary Button</button>
+                <button class="btn--secondary">Secondary Button</button>
+            </div>
+        </section>
+
+        <section class="my--large">
+            <h2>Layout</h2>
+            <hr>
+            <h3>Flexbox</h3>
+            <div class="flex-row my--medium">
+                <div class="card flex-grow">
+                    <p class="px--large py--medium">Horizontal</p>
+                </div>
+                <div class="card flex-grow">
+                    <p class="px--large py--medium">Horizontal</p>
+                </div>
+            </div>
+
+            <div class="flex--auto my--medium">
+                <div class="card flex-grow">
+                    <div class="flex-col px--large py--medium">
+                        <p>Flex Auto</p>
+                        <p class="text--callout">Row on large breakpoints, column on small</p>
+                    </div>
+                </div>
+                <div class="card flex-grow">
+                    <div class="flex-col px--large py--medium">
+                        <p>Flex Auto</p>
+                        <p class="text--callout">Row on large breakpoints, column on small</p>
+                    </div>
+                </div>
+                <div class="card flex-grow">
+                    <div class="flex-col px--large py--medium">
+                        <p>Flex Auto</p>
+                        <p class="text--callout">Row on large breakpoints, column on small</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-col my--medium">
+                <div class="card flex-grow">
+                    <p class="px--large py--medium">Column</p>
+                </div>
+                <div class="card flex-grow">
+                    <p class="px--large py--medium">Column</p>
+                </div>
+                <div class="card flex-grow">
+                    <p class="px--large py--medium">Column</p>
+                </div>
+            </div>
+
+            <h3>Grid</h3>
+            <div class="grid my--medium">
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+                <div class="card x-100">
+                    <p class="px--large py--medium">Grid</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="my--large">
+            <h2>Components</h2>
+            <hr>
+            <h3>Card</h3>
+            <div class="card my--medium">
+                <p class="px--large py--medium">Card</p>
+            </div>
+
+            <h3>Alert</h3>
+            <div class="alert my--medium">
+                <p>Plain alert</p>
+            </div>
+
+            <div class="alert--error my--medium">
+                <p>Error alert</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
