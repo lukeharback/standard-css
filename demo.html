@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Really Useful CSS</title>
+    <title>Fundamental</title>
+    <link rel="stylesheet" href="src/tokens.css">
     <link rel="stylesheet" href="src/base.css">
     <link rel="stylesheet" href="src/utility.css">
 </head>
-<body class="container--medium x-100 m--auto">
-    <div class="m--medium">
+<body class="container-md x-100 m-auto">
+    <div class="m-md">
         <header>
-            <h1>Really Useful CSS</h1>
-            <p>This tiny css library provides default styling and some small utilities. To see how it works view source in your browser</p>
+            <h1>Fundamental</h1>
+            <p class="m-y-xs">Is a tiny css library provides default styling for common html elements and some small layout utilities. To see how it works view source in your browser</p>
         </header>
 
-        <section class="my--large">
+        <section>
             <h2>Text Elements</h2>
             <hr>
             <p>This is a standard paragraph of text. <strong>This text is bold.</strong> <em>This text is italicized.</em> Here is a <a href="#">hyperlink</a>.</p>
@@ -22,10 +23,11 @@
                 This is a blockquote element used to indicate a quotation.
             </blockquote>
             <pre>This is some preformatted text</pre>
-            <p class="text--callout">This is a callout</p>
+            <code>// this is some code</code>
+            <p class="text-callout">This is a callout</p>
         </section>
 
-        <section class="my--large">
+        <section>
             <h2>Headings</h2>
             <hr>
             <h1>Heading 1</h1>
@@ -34,7 +36,7 @@
             <h4>Heading 4</h4>
         </section>
 
-        <section class="my--large">
+        <section>
             <h2>Lists</h2>
             <hr>
             <h3>Unordered List</h3>
@@ -52,46 +54,10 @@
             </ol>
         </section>
 
-        <section class="my--large">
-            <h2>Tables</h2>
-            <hr>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                        <th>Header 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                        <td>Data 3</td>
-                    </tr>
-                    <tr>
-                        <td>Data 4</td>
-                        <td>Data 5</td>
-                        <td>Data 6</td>
-                    </tr>
-                    <tr>
-                        <td>Data 7</td>
-                        <td>Data 8</td>
-                        <td>Data 9</td>
-                    </tr>
-                    <tr>
-                        <td>Data 10</td>
-                        <td>Data 11</td>
-                        <td>Data 12</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="my--large">
+        <section>
             <h2>Forms</h2>
             <hr>
-            <div class="card my--large p--medium">
+            <div class="card m-y-lg p-md">
                 <form action="#">
                     <div class="flex-col">
                         <div class="flex-col">
@@ -99,9 +65,9 @@
                             <label>Email:</label>
                             <input type="text" placeholder="thomas@northwesternrailway.com">
                         </div>
-                        <div class="flex-col my--medium">
+                        <div class="flex-col m-y-md">
                             <h3>Shipping Information</h3>
-                            <div class="flex--auto">
+                            <div class="flex-auto">
                                 <div class="flex-col x-100">
                                     <label>First Name:</label>
                                     <input type="text" placeholder="Thomas">
@@ -120,7 +86,7 @@
                             <textarea rows="4" placeholder="Leave at sheds"></textarea>
                         </div>
 
-                        <div class="flex-row--end">
+                        <div class="flex-row-end">
                             <input type="submit" value="Checkout">
                         </div>
                     </div>
@@ -128,100 +94,190 @@
             </div>
         </section>
 
-        <section class="my--large">
-            <h2>Buttons</h2>
-            <hr>
-            <div class="flex--auto">
-                <button class="btn">Default Button</button>
-                <button class="btn--primary">Primary Button</button>
-                <button class="btn--secondary">Secondary Button</button>
-            </div>
-        </section>
-
-        <section class="my--large">
+        <section>
             <h2>Layout</h2>
             <hr>
             <h3>Flexbox</h3>
-            <div class="flex-row my--medium">
+            <div class="flex-row m-y-md">
                 <div class="card flex-grow">
-                    <p class="px--large py--medium">Horizontal</p>
+                    <p class="p-x-md py-md">Horizontal</p>
                 </div>
                 <div class="card flex-grow">
-                    <p class="px--large py--medium">Horizontal</p>
-                </div>
-            </div>
-
-            <div class="flex--auto my--medium">
-                <div class="card flex-grow">
-                    <div class="flex-col px--large py--medium">
-                        <p>Flex Auto</p>
-                        <p class="text--callout">Row on large breakpoints, column on small</p>
-                    </div>
-                </div>
-                <div class="card flex-grow">
-                    <div class="flex-col px--large py--medium">
-                        <p>Flex Auto</p>
-                        <p class="text--callout">Row on large breakpoints, column on small</p>
-                    </div>
-                </div>
-                <div class="card flex-grow">
-                    <div class="flex-col px--large py--medium">
-                        <p>Flex Auto</p>
-                        <p class="text--callout">Row on large breakpoints, column on small</p>
-                    </div>
+                    <p class="p-x-md py-md">Horizontal</p>
                 </div>
             </div>
 
-            <div class="flex-col my--medium">
+            <div class="flex-auto m-y-md">
                 <div class="card flex-grow">
-                    <p class="px--large py--medium">Column</p>
+                    <div class="flex-col p-x-md py-md">
+                        <p>Flex Auto</p>
+                        <p class="text-callout">Row on large breakpoints, column on small</p>
+                    </div>
                 </div>
                 <div class="card flex-grow">
-                    <p class="px--large py--medium">Column</p>
+                    <div class="flex-col p-x-md py-md">
+                        <p>Flex Auto</p>
+                        <p class="text-callout">Row on large breakpoints, column on small</p>
+                    </div>
                 </div>
                 <div class="card flex-grow">
-                    <p class="px--large py--medium">Column</p>
+                    <div class="flex-col p-x-md py-md">
+                        <p>Flex Auto</p>
+                        <p class="text-callout">Row on large breakpoints, column on small</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-col m-y-md">
+                <div class="card flex-grow">
+                    <p class="p-x-md py-md">Column</p>
+                </div>
+                <div class="card flex-grow">
+                    <p class="p-x-md py-md">Column</p>
+                </div>
+                <div class="card flex-grow">
+                    <p class="p-x-md py-md">Column</p>
                 </div>
             </div>
 
             <h3>Grid</h3>
-            <div class="grid my--medium">
+            <div class="grid m-y-md">
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
                 <div class="card x-100">
-                    <p class="px--large py--medium">Grid</p>
+                    <p class="p-x-md py-md">Grid</p>
                 </div>
             </div>
 
         </section>
 
-        <section class="my--large">
-            <h2>Components</h2>
+        <section>
+            <h2>Margin</h2>
             <hr>
-            <h3>Card</h3>
-            <div class="card my--medium">
-                <p class="px--large py--medium">Card</p>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Axis</th>
+                        <th>Margin</th>
+                        <th>Padding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Auto</td>
+                        <td>All</td>
+                        <td>m-auto</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>32px</td>
+                        <td>All</td>
+                        <td>m-lg</td>
+                        <td>p-lg</td>
+                    </tr>
+                    <tr>
+                        <td>32px</td>
+                        <td>Horizontal</td>
+                        <td>m-x-lg</td>
+                        <td>p-x-lg</td>
+                    </tr>
+                    <tr>
+                        <td>32px</td>
+                        <td>Verticle</td>
+                        <td>m-y-lg</td>
+                        <td>p-y-lg</td>
+                    </tr>
+                    <tr>
+                        <td>16px</td>
+                        <td>All</td>
+                        <td>m-md</td>
+                        <td>p-md</td>
+                    </tr>
+                    <tr>
+                        <td>16px</td>
+                        <td>Horizontal</td>
+                        <td>m-x-md</td>
+                        <td>p-x-md</td>
+                    </tr>
+                    <tr>
+                        <td>16px</td>
+                        <td>Verticle</td>
+                        <td>m-y-md</td>
+                        <td>p-y-md</td>
+                    </tr>
+                    <tr>
+                        <td>8px</td>
+                        <td>All</td>
+                        <td>m-sm</td>
+                        <td>p-sm</td>
+                    </tr>
+                    <tr>
+                        <td>8px</td>
+                        <td>Horizontal</td>
+                        <td>m-x-sm</td>
+                        <td>p-x-sm</td>
+                    </tr>
+                    <tr>
+                        <td>8px</td>
+                        <td>Verticle</td>
+                        <td>m-y-sm</td>
+                        <td>p-y-sm</td>
+                    </tr>
+                    <tr>
+                        <td>4px</td>
+                        <td>All</td>
+                        <td>m-xs</td>
+                        <td>p-xs</td>
+                    </tr>
+                    <tr>
+                        <td>4px</td>
+                        <td>Horizontal</td>
+                        <td>m-x-xs</td>
+                        <td>p-x-xs</td>
+                    </tr>
+                    <tr>
+                        <td>4px</td>
+                        <td>Verticle</td>
+                        <td>m-y-xs</td>
+                        <td>p-y-xs</td>
+                    </tr>
 
-            <h3>Alert</h3>
-            <div class="alert my--medium">
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Buttons</h2>
+            <hr>
+            <div class="flex-auto">
+                <button class="btn">Default Button</button>
+                <button class="btn-primary">Primary Button</button>
+                <button class="btn-secondary">Secondary Button</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Alerts</h2>
+            <hr>
+            <div class="alert">
                 <p>Plain alert</p>
             </div>
 
-            <div class="alert--error my--medium">
+            <div class="alert-error">
                 <p>Error alert</p>
             </div>
         </section>

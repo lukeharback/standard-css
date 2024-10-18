@@ -1,4 +1,4 @@
-# Really Useful CSS
+# Fundamental
 
 This tiny css library provides default styling and some small utilities.
 
