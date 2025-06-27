@@ -63,7 +63,7 @@
                         <div class="flex-col">
                             <h3>Contact Information</h3>
                             <label>Email:</label>
-                            <input type="text" placeholder="thomas@northwesternrailway.com">
+                            <input type="email" placeholder="thomas@northwesternrailway.com">
                         </div>
                         <div class="flex-col m-y-md">
                             <h3>Shipping Information</h3>
@@ -81,9 +81,36 @@
                                 <label>Address:</label>
                                 <input type="text" placeholder="123 Main St, Sodor">
                             </div>
-
-                            <label>Special Instructions:</label>
-                            <textarea rows="4" placeholder="Leave at sheds"></textarea>
+                            <div class="flex-col x-100">
+                                <label>Country:</label>
+                                <select>
+                                    <option>Select a country</option>
+                                    <option>United Kingdom</option>
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                </select>
+                            </div>
+                            <div class="flex-col x-100">
+                                <label>Special Instructions:</label>
+                                <textarea rows="4" placeholder="Leave at sheds"></textarea>
+                            </div>
+                            <div class="flex-col x-100">
+                                <label class="flex-row-align-center">
+                                    <input type="checkbox">
+                                    Subscribe to newsletter
+                                </label>
+                            </div>
+                            <div class="flex-col x-100">
+                                <label>Preferred Contact:</label>
+                                <label class="flex-row-align-center">
+                                    <input type="radio" name="contact" value="email">
+                                    Email
+                                </label>
+                                <label class="flex-row-align-center">
+                                    <input type="radio" name="contact" value="phone">
+                                    Phone
+                                </label>
+                            </div>
                         </div>
 
                         <div class="flex-row-end">
@@ -91,6 +118,118 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Typography Utilities</h2>
+            <hr>
+            <div class="card m-y-md p-md">
+                <h3>Text Alignment</h3>
+                <p class="text-left border-b p-y-sm">Left aligned text</p>
+                <p class="text-center border-b p-y-sm">Center aligned text</p>
+                <p class="text-right border-b p-y-sm">Right aligned text</p>
+                <p class="text-justify p-y-sm">Justified text that spreads across the full width of the container. This is useful for longer paragraphs where you want the text to align evenly on both sides.</p>
+            </div>
+
+            <div class="card m-y-md p-md">
+                <h3>Font Weights</h3>
+                <p class="font-light">Light weight text (300)</p>
+                <p class="font-normal">Normal weight text (400)</p>
+                <p class="font-medium">Medium weight text (500)</p>
+                <p class="font-semibold">Semibold weight text (600)</p>
+                <p class="font-bold">Bold weight text (700)</p>
+                <p class="font-extrabold">Extrabold weight text (800)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Display & Position</h2>
+            <hr>
+            <div class="card m-y-md p-md">
+                <h3>Display Utilities</h3>
+                <div class="flex-row-space-between">
+                    <div class="card p-sm">
+                        <p class="text-center">Block</p>
+                        <div class="block p-xs">Block element</div>
+                    </div>
+                    <div class="card p-sm">
+                        <p class="text-center">Inline</p>
+                        <div class="inline p-xs">Inline</div>
+                        <div class="inline p-xs">element</div>
+                    </div>
+                    <div class="card p-sm">
+                        <p class="text-center">Inline Block</p>
+                        <div class="inline-block p-xs">Inline</div>
+                        <div class="inline-block p-xs">Block</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card m-y-md p-md">
+                <h3>Position Utilities</h3>
+                <div class="relative border p-md" style="height: 100px;">
+                    <div class="absolute top-0 left-0 p-xs">Absolute Top Left</div>
+                    <div class="absolute bottom-0 right-0 p-xs">Absolute Bottom Right</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Borders & Shadows</h2>
+            <hr>
+            <div class="card m-y-md p-md">
+                <h3>Border Utilities</h3>
+                <div class="flex-auto">
+                    <div class="border p-sm">All borders</div>
+                    <div class="border-t p-sm">Top border</div>
+                    <div class="border-r p-sm">Right border</div>
+                    <div class="border-b p-sm">Bottom border</div>
+                    <div class="border-l p-sm">Left border</div>
+                </div>
+            </div>
+
+            <div class="card m-y-md p-md">
+                <h3>Border Radius</h3>
+                <div class="flex-auto">
+                    <div class="border border-radius-sm p-sm">Small radius</div>
+                    <div class="border border-radius p-sm">Default radius</div>
+                    <div class="border border-radius-md p-sm">Medium radius</div>
+                    <div class="border border-radius-lg p-sm">Large radius</div>
+                    <div class="border border-radius-full p-sm">Full radius</div>
+                </div>
+            </div>
+
+            <div class="card m-y-md p-md">
+                <h3>Shadow Utilities</h3>
+                <div class="flex-auto">
+                    <div class="shadow-sm p-sm">Small shadow</div>
+                    <div class="shadow p-sm">Default shadow</div>
+                    <div class="shadow-md p-sm">Medium shadow</div>
+                    <div class="shadow-lg p-sm">Large shadow</div>
+                    <div class="shadow-xl p-sm">Extra large shadow</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Responsive Utilities</h2>
+            <hr>
+            <div class="card m-y-md p-md">
+                <h3>Responsive Text Alignment</h3>
+                <p class="text-center md:text-left lg:text-right">
+                    This text is centered on mobile, left-aligned on medium screens, and right-aligned on large screens.
+                </p>
+            </div>
+
+            <div class="card m-y-md p-md">
+                <h3>Responsive Display</h3>
+                <div class="hidden md:block p-sm">
+                    Hidden on mobile, visible on medium screens and up
+                </div>
+                <div class="block md:hidden p-sm">
+                    Visible on mobile, hidden on medium screens and up
+                </div>
             </div>
         </section>
 
