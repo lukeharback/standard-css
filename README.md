@@ -2,15 +2,6 @@
 
 This tiny css library provides default styling and some small utilities.
 
-## Features
-
-- 🎨 **Design Tokens**: CSS custom properties for consistent theming
-- 🌙 **Dark Mode**: Automatic dark mode support using `prefers-color-scheme`
-- 📱 **Responsive**: Mobile-first approach with responsive utilities
-- 🎯 **Utility-First**: Practical utility classes for common use cases
-- ♿ **Accessible**: Focus states and semantic HTML support
-- 🚀 **Lightweight**: Minimal footprint with maximum utility
-
 ## Installation
 
 Download the files from the `src/` directory and include them in your HTML:
